@@ -4,7 +4,7 @@ import { AppModule } from './module/app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors(); // LIBERA CORS
-  await app.listen(process.env.PORT ?? 3004);
+  await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
 // Postman para testes
